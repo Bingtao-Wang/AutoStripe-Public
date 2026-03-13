@@ -138,6 +138,14 @@ See [docs/V6_Technical_Summary.md](docs/V6_Technical_Summary.md) for detailed us
 
 ---
 
+## 🎬 Demo Video
+
+https://github.com/Bingtao-Wang/AutoStripe-Public/assets/划线机功能演示.mp4
+
+*Automatic line-marking demonstration in CARLA simulator showing the complete perception-planning-control pipeline.*
+
+---
+
 ## 🔧 Core Modules
 
 ### 1. Three-Modal Perception Switching
