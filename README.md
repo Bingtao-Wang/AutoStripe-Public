@@ -11,7 +11,7 @@
 
 ## 🎬 Demo Video
 
-> **Video will be available soon via GitHub issue attachment for better playback experience.**
+[![Watch Demo Video](https://img.shields.io/badge/▶️_Watch_on-Bilibili-00A1D6?style=for-the-badge&logo=bilibili)](https://www.bilibili.com/video/BV14ScUzTENE/)
 
 *Automatic line-marking demonstration in CARLA simulator showing the complete perception-planning-control pipeline.*
 
