@@ -11,7 +11,7 @@
 
 ## 🎬 Demo Video
 
-https://github.com/Bingtao-Wang/AutoStripe-Public/assets/划线机功能演示.mp4
+> **Video will be available soon via GitHub issue attachment for better playback experience.**
 
 *Automatic line-marking demonstration in CARLA simulator showing the complete perception-planning-control pipeline.*
 
