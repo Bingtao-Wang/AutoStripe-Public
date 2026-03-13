@@ -169,6 +169,17 @@ See [docs/V6_Technical_Summary.md](docs/V6_Technical_Summary.md) for detailed us
 
 ---
 
+## 📚 Related Projects
+
+This work is part of a Master's thesis research on automatic line-marking systems. Related chapters:
+
+- **[VLLiNet](https://github.com/Bingtao-Wang/VLLiNet-Pre-release)** - Lightweight multi-modal road segmentation (Chapter 2)
+  - 96.32% MaxF, 14.04M params, 55 FPS on KITTI Road
+- **[LUNA-Net](https://github.com/Bingtao-Wang/LUNA-Net-Pre-Release)** - Low-light adaptive road segmentation (Chapter 3)
+  - Illumination-adaptive fusion for nighttime scenarios
+
+---
+
 ## 📝 Citation
 
 This work is part of a Master's thesis at Shandong University (Chapter 4).
