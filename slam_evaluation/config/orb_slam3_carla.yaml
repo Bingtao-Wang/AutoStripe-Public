@@ -1,0 +1,90 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters for CARLA stereo setup (752x480, FOV=90, baseline=0.6m)
+#--------------------------------------------------------------------------------------------
+Camera.type: "PinHole"
+
+Camera.width: 752
+Camera.height: 480
+
+Camera.fx: 376.0
+Camera.fy: 376.0
+Camera.cx: 376.0
+Camera.cy: 240.0
+
+Camera.k1: 0.0
+Camera.k2: 0.0
+Camera.p1: 0.0
+Camera.p2: 0.0
+
+Camera.fps: 20.0
+Camera.RGB: 1
+
+# Stereo baseline times fx
+Camera.bf: 225.6
+
+# Stereo threshold (max depth for stereo matching)
+ThDepth: 40.0
+
+# Transformation from camera to body/IMU (Tbc)
+# Since IMU data is pre-rotated to camera frame in slam_interface.py,
+# the "body frame" seen by ORB-SLAM3 has camera orientation.
+# Translation = camera-to-IMU vector in CAMERA frame coordinates:
+#   Vehicle frame: IMU(0,0,1.5), Camera(2.5,-0.3,3.5) → delta=(2.5,-0.3,2.0)
+#   Camera frame:  cam_x=veh_y=-0.3, cam_y=-veh_z=-2.0, cam_z=veh_x=2.5
+Tbc: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: f
+   data: [1.0, 0.0, 0.0, -0.3,
+          0.0, 1.0, 0.0, -2.0,
+          0.0, 0.0, 1.0, 2.5,
+          0.0, 0.0, 0.0, 1.0]
+
+# Transformation from left camera to right camera (Tlr)
+# Baseline 0.6m along camera X-axis (right direction)
+Tlr: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: f
+   data: [1.0, 0.0, 0.0, 0.6,
+          0.0, 1.0, 0.0, 0.0,
+          0.0, 0.0, 1.0, 0.0,
+          0.0, 0.0, 0.0, 1.0]
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters (优化弯道性能)
+#--------------------------------------------------------------------------------------------
+ORBextractor.nFeatures: 3000
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 8
+ORBextractor.minThFAST: 3
+
+#--------------------------------------------------------------------------------------------
+# IMU Parameters (极低权重，主要依赖视觉)
+#--------------------------------------------------------------------------------------------
+IMU.NoiseGyro: 0.1
+IMU.NoiseAcc: 0.1
+IMU.GyroWalk: 0.01
+IMU.AccWalk: 0.1
+IMU.Frequency: 200
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters (禁用3D Viewer以节省资源)
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500
+
+# Disable viewer (set to 0 to disable)
+System.LoadAtlasFromFile: ""
+System.SaveAtlasToFile: ""
