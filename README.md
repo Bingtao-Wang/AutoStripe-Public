@@ -41,6 +41,23 @@
 
 ---
 
+## 🗺️ SLAM Evaluation System
+
+Independent ORB-SLAM3 stereo-inertial evaluation system for autonomous driving scenarios.
+
+![SLAM Evaluation Demo](figures/slam_evaluation_demo.png)
+
+**Key Features**:
+- **Stereo-Inertial SLAM**: 752×480 stereo cameras + 200Hz IMU fusion
+- **ROS Integration**: Complete ROS wrapper for ORB-SLAM3
+- **Performance Metrics**: ATE (Absolute Trajectory Error) and RPE (Relative Pose Error)
+- **Real-time Visualization**: Stereo camera views + trajectory comparison
+- **CARLA Autopilot**: Automated testing in simulation environment
+
+**Location**: `slam_evaluation/` directory contains the complete evaluation framework.
+
+---
+
 ## 🚗 Virtual Line-Marking Machine
 
 ![Machine Modeling Workflow](figures/Fig.4-2_model_workflow.png)
@@ -166,23 +183,6 @@ See [docs/V6_Technical_Summary.md](docs/V6_Technical_Summary.md) for detailed us
 - Distance monitoring with hysteresis
 - Solid/dashed line mode support
 - Automatic start/stop based on nozzle-edge distance
-
----
-
-## 🗺️ SLAM Evaluation System
-
-Independent ORB-SLAM3 stereo-inertial evaluation system for autonomous driving scenarios.
-
-![SLAM Evaluation Demo](figures/slam_evaluation_demo.png)
-
-**Key Features**:
-- **Stereo-Inertial SLAM**: 752×480 stereo cameras + 200Hz IMU fusion
-- **ROS Integration**: Complete ROS wrapper for ORB-SLAM3
-- **Performance Metrics**: ATE (Absolute Trajectory Error) and RPE (Relative Pose Error)
-- **Real-time Visualization**: Stereo camera views + trajectory comparison
-- **CARLA Autopilot**: Automated testing in simulation environment
-
-**Location**: `slam_evaluation/` directory contains the complete evaluation framework.
 
 ---
 
