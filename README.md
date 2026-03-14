@@ -9,11 +9,24 @@
 
 ---
 
-## 🎬 Demo Video
+## 🎬 Demo Videos
 
-[![Watch Demo Video](figures/demo_video_cover.jpg)](https://www.bilibili.com/video/BV14ScUzTENE/)
-
-*Click the image above to watch the automatic line-marking demonstration on Bilibili.*
+<table>
+<tr>
+<td width="50%">
+  <a href="https://www.bilibili.com/video/BV14ScUzTENE/">
+    <img src="figures/demo_video_cover.jpg" alt="AutoStripe Demo">
+  </a>
+  <p align="center"><b>Complete Line-Marking System</b></p>
+</td>
+<td width="50%">
+  <a href="https://www.bilibili.com/video/BV1wmwxzPEsB/">
+    <img src="figures/demo_video_ROS-SLAM3.jpg" alt="ORB-SLAM3 Demo">
+  </a>
+  <p align="center"><b>ORB-SLAM3 Evaluation</b></p>
+</td>
+</tr>
+</table>
 
 ---
 
